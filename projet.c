@@ -1,5 +1,31 @@
 #include <stdio.h>
+#include <string.h>
+#include <time.h>
+//*les structures*//
+typedef struct {
+int id[100];
+char titre[20];
+char description[100];
+char statut[20];
+}taches;
+ int i;
+    taches c[100];
+//*fonction d ajouter*//
+void ajoute(){
+    int y;
 
+    do{  printf(" __________________________________________________________________________\n");
+    printf("________________________________ajouter la tache ________________________\n");
+    printf("entre le titre de tache ;");
+    scanf("%s",&c[i].titre);
+    printf("entre le description de tache :");
+    scanf("%s",c[i].description);
+    
+printf("si tu veux entre un notre un autre tache click 1 ");
+scanf("%d",&y);
+}while(y==1);
+}
+  
 int main(){
     //*declaration des variables 
     int x;
